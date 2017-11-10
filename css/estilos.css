@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    background: #02010a;
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100%;
+    height: 1100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenido {
+    width: 900px;
+    height: 100%;
+    animation: slidein 1s forwards;
+    
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #5b7989;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+}
+
+.menu {
+    width: 40%;
+    height: 30px;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+.active{
+    text-decoration: none
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background: #82c3a6;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 85%;
+    height: 350px;
+
+    border: 1px solid;
+    box-shadow: 2px 2px #02010a;
+}
+
+
+
+.fotos {
+    width: 100%;
+    height: 400px;
+    background: #d5c75f;
+    border: 1px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.foto {
+    width: 80%;
+    height: 80%;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto img {
+    width: 80%;
+    transition: all .5s ease;
+    
+}
+
+.foto:first-child img:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+.foto:last-child img:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+p {
+
+    color: black;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.contacto {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.redes {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.terminos {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.derechos {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.texto p {
+    font-size: 1em;
+}
+
+
+
+
+/* Animacions Css3 */
+
+@keyframes slidein {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5p%;}
+    100% {margin-top: 0p%;}
+}
+
+
+
+/* Version movil */
+
+@media only screen and (max-width: 900px) {
+    body, .contenedor{
+        height:1900px;
+    }
+    
+    .contenido{
+        width: 100%;
+    }
+    
+        header{
+        height: 200px;
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    
+    .menu{
+        width: 100%;
+        height: 50%;
+        font-size: 1.5em;
+    }
+    
+    .banner{
+        height: 300px;
+    }
+}
+
