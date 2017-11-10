@@ -1,0 +1,122 @@
+.banner {
+    width: 100%;
+    height: 400px;
+    background: #82c3a6;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 85%;
+    height: 350px;
+
+    border: 1px solid;
+    box-shadow: 2px 2px #02010a;
+}
+
+
+
+.fotos {
+    width: 100%;
+    height: 400px;
+    background: #d5c75f;
+    border: 1px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.foto {
+    width: 80%;
+    height: 80%;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto img {
+    width: 80%;
+    transition: all .5s ease;
+    
+}
+
+.foto:first-child img:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+.foto:last-child img:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+p {
+
+    color: black;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .banner{
+        height: 300px;
+    }
+    
+    img{
+        height: 80%;
+    }
+    
+    .fotos{ 
+        height: 700px; 
+        flex-direction: column
+    }
+    
+    .foto{
+        width: 100%;
+        height: 80%;
+    }
+    
+    p{
+        font-size: 30px;
+    }
+    
+    footer{
+        width: 100%;
+        height: 700px;
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacto{
+        height: 20%;
+    }
+    
+    .terminos{
+        height: 20%;
+    }
+    
+    .redes{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .derechos{
+        height: 20%;
+    }
+
+}
